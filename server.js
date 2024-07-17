@@ -11,12 +11,14 @@ const { error } = require('console')
 
 
 
+
 const PORT = process.env.PORT || 3001;
 const app = express();
 // const notes = require('express').Router();
 
 //middleware for parsing JSON and URlencoded 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 // app.use('/api', api)
 
 //middleware to serve up static assets from public folder
@@ -70,8 +72,8 @@ app.post('/api/notes', (req, res) => {
     }).then((Db) => {
     //    console.log("SERVER: READ FILE")
        let newDb = (JSON.parse(Db))
-    //    console.log(oldDb)
-       console.log("SERVER: appended file")
+    //    console.log(newDb)
+    //    console.log("SERVER: appended file")
        newDb.push(newNote)
        console.log(newDb)
 
