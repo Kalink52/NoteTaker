@@ -7,7 +7,7 @@
   ## Deployed app
 
 [CLICK ME](https://notetaker-wq7h.onrender.com/)
-
+![alt text](<assets/Screenshot 2024-07-17 154143.png>)
   ## Table of Contents
   * [Installation](#Installation)
   * [Usage](#Usage)
